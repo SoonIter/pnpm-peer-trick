@@ -1,0 +1,63 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers: {}
+
+  packages/a:
+    specifiers:
+      loose-envify: 1.3.0
+      react: '18'
+    dependencies:
+      loose-envify: 1.3.0
+      react: 18.2.0_loose-envify@1.3.0
+
+  packages/b:
+    specifiers:
+      loose-envify: 1.1.0
+      react: '18'
+    dependencies:
+      loose-envify: 1.1.0
+      react: 18.2.0_loose-envify@1.1.0
+
+packages:
+
+  /js-tokens/1.0.3:
+    resolution: {integrity: sha512-SfeDkKyjCWzOfBEyjRcmtt4GUejT68lG5DL3+AkWFsyB5sJLcVs/Ucxk5vNjeg0qmQ/Js4jPJTzeqpaDB/6ZVg==}
+    dev: false
+
+  /js-tokens/2.0.0:
+    resolution: {integrity: sha512-kk4RjoztHFeAlCNPdTr/uF04oN5z53L18LJfADBQ7YHkO3iR2rP2ZwOH0n33r2FRw0psRmjTDEkOWPE//zmujg==}
+    dev: false
+
+  /loose-envify/1.1.0:
+    resolution: {integrity: sha512-4NSTa8hGGPR5GZqmiBXK5JbxPRzsfMXayx55AvpLGHvhsNiL01bToVMGiFxe4CBhBLJCil3Ek08q9+SNWiKlyg==}
+    dependencies:
+      js-tokens: 1.0.3
+    dev: false
+
+  /loose-envify/1.3.0:
+    resolution: {integrity: sha512-500ib3eg2h+w0xlKA5mcW1BxpB5EzgfK04rocSxP7JXnOHHAYD68iqObXKPyKvFmkdJT0ptUmm2IOyFSPtrCQg==}
+    hasBin: true
+    dependencies:
+      js-tokens: 2.0.0
+    dev: false
+
+  /react/18.2.0_loose-envify@1.1.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      loose-envify: '*'
+    dependencies:
+      loose-envify: 1.1.0
+    dev: false
+
+  /react/18.2.0_loose-envify@1.3.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      loose-envify: '*'
+    dependencies:
+      loose-envify: 1.3.0
+    dev: false

@@ -1,6 +1,6 @@
 # pnpm-peer-trick
 
-```json
+```js
 // before
 react
   dependencies
@@ -16,14 +16,14 @@ react
       - js-tokens
 ```
 
-```json
+```js
 a > react@18.2.0 > loose-envify@1.1.0
 b > react@18.2.0 > loose-envify@1.3.0
 ```
 ![demo](./assets/preview.jpg)
 
 
-```json
+```js
 app-demo
   react@18.2.0     <----------- the same
   antd                        |
@@ -33,6 +33,6 @@ app-demo
 
 
 btw, I think react is the best package to test pnpm behavior
-```json
+```js
 react > loose-envify > js-tokens
 ```

@@ -1,5 +1,6 @@
-# pnpm-peer-trick
+# pnpm-peer-trick 
 Q: How to specify the version of secondary dependencies?
+A: HACK the peer with pnpm to specify the secondary dependencies 
 
 ```js
 // before

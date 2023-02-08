@@ -1,10 +1,11 @@
 # pnpm-peer-trick
+Q: How to specify the version of secondary dependencies?
 
 ```js
 // before
 react
   dependencies
-  - loose-envify   <---- How can I specify the version of this? peer it
+  - loose-envify   <---- How can I specify the version of this? peer it and auto-install-peers=true
       dependencies
       - js-tokens
 
@@ -17,12 +18,20 @@ react
 ```
 
 ```js
-a > react@18.2.0 > loose-envify@1.1.0
-b > react@18.2.0 > loose-envify@1.3.0
+  a    > react@18.2.0 > loose-envify@1.2.0
+  b    > react@18.2.0 > loose-envify@1.1.0
+normal > react@18.2.0 > loose-envify@1.4.0
 ```
-![demo](./assets/preview.jpg)
+
+```js
+  a    > react@18.2.0_loose-envify@1.2.0
+  b    > react@18.2.0_loose-envify@1.1.0
+normal > react@18.2.0_loose-envify@1.4.0
+```
+![demo](./docs/dot_pnpm.jpg)
 
 
+## what is peer?
 ```js
 app-demo
   react@18.2.0     <----------- the same
@@ -30,7 +39,6 @@ app-demo
     peerDependencies          |
     - react@18.2.0 <----------- 
 ```
-
 
 btw, I think react is the best package to test pnpm behavior
 ```js

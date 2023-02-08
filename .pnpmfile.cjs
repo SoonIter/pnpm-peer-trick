@@ -1,12 +1,25 @@
-function readPackage(pkg, context) {
-  // Override the manifest of foo@1.x after downloading it from the registry
-  if (pkg.name === 'react') {
-    // Replace bar@x.x.x with bar@2.0.0
-    delete pkg['react'];
-    pkg.peerDependencies = {
-      'loose-envify': '*',
-    };
+/*
+treat react/package.json as this:
+{
+  "name": "react",
+  "version": "18.2.0",
+  "dependencies": {
+    "loose-envify": "^1.1.0"
+  },
+  "peerDependencies": {
+    "loose-envify": "^1.1.0"
   }
+}
+
+auto-install-peers=true
+*/
+function readPackage(pkg, context) {
+  if (pkg.name === 'react') {
+    pkg.peerDependencies &&
+      Object.assign(pkg.peerDependencies, {
+        'loose-envify': '^1.1.0',
+      });
+  } 
 
   return pkg;
 }

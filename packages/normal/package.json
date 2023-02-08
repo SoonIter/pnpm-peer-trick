@@ -1,11 +1,13 @@
 {
-  "name": "hello",
+  "name": "c",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.26.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "18.2.0"
   },
   "keywords": [],
   "author": "",

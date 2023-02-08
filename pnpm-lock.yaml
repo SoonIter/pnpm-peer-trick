@@ -7,19 +7,35 @@ importers:
 
   packages/a:
     specifiers:
-      loose-envify: 1.3.0
-      react: '18'
+      loose-envify: 1.2.0
+      react: 18.2.0
     dependencies:
-      loose-envify: 1.3.0
-      react: 18.2.0_loose-envify@1.3.0
+      loose-envify: 1.2.0
+      react: 18.2.0_loose-envify@1.2.0
 
   packages/b:
     specifiers:
       loose-envify: 1.1.0
-      react: '18'
+      react: 18.2.0
     dependencies:
       loose-envify: 1.1.0
       react: 18.2.0_loose-envify@1.1.0
+
+  packages/d:
+    specifiers:
+      js-tokens: 8.0.1
+      loose-envify: 1.2.0
+      react: 18.2.0
+    dependencies:
+      js-tokens: 8.0.1
+      loose-envify: 1.2.0
+      react: 18.2.0_loose-envify@1.2.0
+
+  packages/normal:
+    specifiers:
+      react: 18.2.0
+    dependencies:
+      react: 18.2.0_loose-envify@1.4.0
 
 packages:
 
@@ -27,8 +43,12 @@ packages:
     resolution: {integrity: sha512-SfeDkKyjCWzOfBEyjRcmtt4GUejT68lG5DL3+AkWFsyB5sJLcVs/Ucxk5vNjeg0qmQ/Js4jPJTzeqpaDB/6ZVg==}
     dev: false
 
-  /js-tokens/2.0.0:
-    resolution: {integrity: sha512-kk4RjoztHFeAlCNPdTr/uF04oN5z53L18LJfADBQ7YHkO3iR2rP2ZwOH0n33r2FRw0psRmjTDEkOWPE//zmujg==}
+  /js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /js-tokens/8.0.1:
+    resolution: {integrity: sha512-3AGrZT6tuMm1ZWWn9mLXh7XMfi2YtiLNPALCVxBCiUVq0LD1OQMxV/AdS/s7rLJU5o9i/jBZw/N4vXXL5dm29A==}
     dev: false
 
   /loose-envify/1.1.0:
@@ -37,27 +57,43 @@ packages:
       js-tokens: 1.0.3
     dev: false
 
-  /loose-envify/1.3.0:
-    resolution: {integrity: sha512-500ib3eg2h+w0xlKA5mcW1BxpB5EzgfK04rocSxP7JXnOHHAYD68iqObXKPyKvFmkdJT0ptUmm2IOyFSPtrCQg==}
+  /loose-envify/1.2.0:
+    resolution: {integrity: sha512-KyUZthzTKOK79BVhotg9i7VT6BcBij33rdnPMeZfafKTO5Br6gzDGqTieocXCJW1n6so0rZCiFgoYM5W10tFWA==}
     hasBin: true
     dependencies:
-      js-tokens: 2.0.0
+      js-tokens: 1.0.3
+    dev: false
+
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
     dev: false
 
   /react/18.2.0_loose-envify@1.1.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
     peerDependencies:
-      loose-envify: '*'
+      loose-envify: ^1.1.0
     dependencies:
       loose-envify: 1.1.0
     dev: false
 
-  /react/18.2.0_loose-envify@1.3.0:
+  /react/18.2.0_loose-envify@1.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
     peerDependencies:
-      loose-envify: '*'
+      loose-envify: ^1.1.0
     dependencies:
-      loose-envify: 1.3.0
+      loose-envify: 1.2.0
+    dev: false
+
+  /react/18.2.0_loose-envify@1.4.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      loose-envify: ^1.1.0
+    dependencies:
+      loose-envify: 1.4.0
     dev: false

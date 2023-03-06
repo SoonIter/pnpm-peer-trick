@@ -29,7 +29,7 @@ normal > react@18.2.0 > loose-envify@1.4.0
   b    > react@18.2.0_loose-envify@1.1.0
 normal > react@18.2.0_loose-envify@1.4.0
 ```
-![demo](./docs/dot_pnpm.jpg)
+![demo](https://github.com/SoonIter/pnpm-peer-trick/blob/main/docs/dot_pnpm.png)
 
 
 ## what is peer?
